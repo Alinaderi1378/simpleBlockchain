@@ -11,7 +11,6 @@ import (
 type BlockWrapper struct {
 	Block *Block `json:"block"`
 }
-
 type Block struct {
 	Index        uint64
 	Timestamp    time.Time

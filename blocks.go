@@ -19,7 +19,6 @@ func blocksLatest(w http.ResponseWriter, r *http.Request) {
 	ret["block"] = []*Block{getLatestBlock()}
 	writeJSON(w, http.StatusOK, ret)
 }
-
 func getLatestBlock() *Block {
 	return blockchain[len(blockchain)-1]
 }
